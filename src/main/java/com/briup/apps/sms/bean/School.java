@@ -6,7 +6,7 @@ public class School {
 	private String description;
 	private String tel;
 	private String address;
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 	public void setId(long id) {
