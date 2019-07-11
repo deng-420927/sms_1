@@ -3,8 +3,22 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.briup.apps.sms.dao.CourseDao">
-  <select id="selectAll" resultType="com.briup.apps.sms.bean.Course">
+  <select id="selectAll" 
+  resultType="com.briup.apps.sms.bean.Course">
     select * from sms_course
   </select>
+  
+  <insert id="insert">
+  insert into sms_course values (null,#{name},#{credit},#{user_id})
+  </insert>
+  <update id ="update">
+  	update sms_course
+  	set name = #{name},
+  	credit = #{credit},
+  	user_id = #{user_id}
+  </update>  
+  <delete id ="delete">
+  	delete from sms_course where id = #{id};
+  </delete>
 </mapper>
 
