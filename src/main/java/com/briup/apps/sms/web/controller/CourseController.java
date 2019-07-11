@@ -20,5 +20,18 @@ public class CourseController {
 	public List<Course> selectAll()
 	{
 		return courseService.selectAll();
-	}
+	}	
+	// http://localhost:8080/school/deleteById?id=3
+		@GetMapping("deleteById")
+		public String deleteById(long id) {
+			try {
+				courseService.deleteById(id);
+				return "删除成功";
+			} catch (Exception e) {
+				// 打印异常信息，返回异常信息
+				e.printStackTrace();
+				return e.getMessage();
+			}
+		}
 }
+

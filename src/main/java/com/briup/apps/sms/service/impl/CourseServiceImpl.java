@@ -34,4 +34,10 @@ public class CourseServiceImpl implements CourseService{
 		}
 	}
 
+	@Override
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		courseDao.deleteById(id);
+	}
+
 }
