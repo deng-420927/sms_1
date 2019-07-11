@@ -7,7 +7,7 @@
     select * from sms_school
   </select>
   <insert id="insert">
-   insert into sms_school(null,#{name},#{description},#{tel},#{address});
+   insert into sms_school values(null,#{name},#{description},#{tel},#{address});
   </insert>
   <update id="update">
   update sms_school 
