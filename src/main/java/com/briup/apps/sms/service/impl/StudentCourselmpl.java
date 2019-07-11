@@ -34,5 +34,9 @@ public class StudentCourselmpl implements StudentCourseService {
 			studentCourseDao.update(studentCourse);
 		}
 	}
+	@Override
+	public void deleteById(long id) throws Exception {
+		   studentCourseDao.deleteById(id);
+	}
 
 }
