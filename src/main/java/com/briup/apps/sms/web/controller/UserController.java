@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.briup.apps.sms.bean.User;
 import com.briup.apps.sms.service.UserService;
 
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -27,7 +28,7 @@ public class UserController {
 	}catch(Exception e)
 	{	
 		e.printStackTrace();
-		return "失败";
+		return "插入或更新失败";
 	}
 	}
 	@GetMapping("selectAll")
