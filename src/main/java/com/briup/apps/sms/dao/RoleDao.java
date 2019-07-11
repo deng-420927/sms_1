@@ -9,4 +9,6 @@ public interface RoleDao {
 	void insert(Role role);
 	void update(Role role);
 	void deletById(long Id);
+	
+	
 	}

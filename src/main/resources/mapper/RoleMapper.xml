@@ -19,4 +19,5 @@
   <delete id="deleteById">
   	delete from sms_role where id = #{id}
   </delete>
+  
 </mapper>

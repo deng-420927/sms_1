@@ -32,4 +32,5 @@ public class RoleServiceImpl implements RoleService {
 	public void deleteById(long id) throws Exception {
 		roleDao.deletById(id);
 	}
+	
 }
