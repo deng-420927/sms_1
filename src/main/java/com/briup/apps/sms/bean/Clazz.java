@@ -3,7 +3,8 @@ package com.briup.apps.sms.bean;
 public class Clazz {
 	private Long id;
 	private String name;
-	private String begin_time;
+	private Long begin_time;
+	private Long college_id;
 	public Long getId() {
 		return id;
 	}
@@ -16,11 +17,17 @@ public class Clazz {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getBegin_time() {
+	public Long getBegin_time() {
 		return begin_time;
 	}
-	public void setBegin_time(String begin_time) {
+	public void setBegin_time(Long begin_time) {
 		this.begin_time = begin_time;
 	}
-	
+	public Long getCollege_id() {
+		return college_id;
+	}
+	public void setCollege_id(Long college_id) {
+		this.college_id = college_id;
+	} 
+
 }
