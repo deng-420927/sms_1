@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,18 @@ public class UserRoleController {
 	@Autowired
 	private UserRoleService userRoleService;
 	
+	@PostMapping("saveOrUpdate")
+	public String saveOrUpdate(UserRole userRole)
+	{
+		try {
+			userRoleService.saveOrUpdate(userRole);
+			return "更新成功";
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return "更新失败";
+		}
+	}
 	@GetMapping("selectAll")
 	public List<UserRole> selectAll()
 	{
