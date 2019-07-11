@@ -8,4 +8,5 @@ public interface UserRoleDao {
 	List<UserRole> selectAll();
 	void insert(UserRole userRole);
 	void update(UserRole userRole);
+	void deleteById(long id);
 }

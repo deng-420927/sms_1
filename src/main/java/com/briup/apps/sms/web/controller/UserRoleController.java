@@ -21,4 +21,16 @@ public class UserRoleController {
 	{
 		return userRoleService.selectAll();
 	}
+	@GetMapping("deleteById")
+	public String deleteById(long id)
+	{
+		try {
+			userRoleService.deleteById(id);
+			return "删除成功";
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return e.getMessage();
+		}
+	}
 }
