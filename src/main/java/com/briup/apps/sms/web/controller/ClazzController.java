@@ -17,7 +17,7 @@ public class ClazzController {
 	@Autowired
 	private ClazzService clazzService;
 	
-	@PostMapping
+	@PostMapping("saveOrUpdate")
 	public String saveOrUpdate(Clazz clazz)
 	{
 		try {
@@ -26,7 +26,7 @@ public class ClazzController {
 		}catch(Exception e)
 		{
 			e.printStackTrace();
-			return e.getMessage();
+			return "更新失败";
 		}
 	}
 	

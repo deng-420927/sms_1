@@ -7,20 +7,18 @@
     select * from sms_clazz
   </select>
   <insert id="insert">
-  	insert into sms_school values(null,#{name},#{description},#{tel},#{address});
+  	insert into sms_clazz values(null,#{name},#{begin_time});
   </insert>
 
   <update id="update">
-  	update sms_school
+  	update sms_clazz
 	set name=#{name},
-	description=#{description},
-	tel=#{tel},
-	address=#{address}
+	begin_time = #{begin_time}
 	where id = #{id}
   </update>
 
   <delete id="deleteById">
-  	delete from sms_school where id = #{id}
+  	delete from sms_clazz where id = #{id}
   </delete>
   
 </mapper>
