@@ -17,8 +17,10 @@
   	credit = #{credit},
   	user_id = #{user_id}
   </update>  
-  <delete id ="delete">
-  	delete from sms_course where id = #{id};
+  <delete id="deleteById">
+  	delete from sms_course
+  	where id=#{id}
   </delete>
+
 </mapper>
 
