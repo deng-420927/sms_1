@@ -13,7 +13,7 @@
   update sms_school 
   set name=#{name},
   description=#{description},
-  tel=#{tel},
+  tel = #{tel},
   address=#{address}
   where id=#{id}
   </update>

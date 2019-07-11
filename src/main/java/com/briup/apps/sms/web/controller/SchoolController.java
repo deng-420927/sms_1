@@ -1,6 +1,6 @@
 package com.briup.apps.sms.web.controller;
 
-import static org.assertj.core.api.Assertions.catchThrowable;
+
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.briup.apps.sms.bean.School;
 import com.briup.apps.sms.service.SchoolService;
 
-@SuppressWarnings("unused")
+
 @RestController
 @RequestMapping("/school")
 public class SchoolController {
