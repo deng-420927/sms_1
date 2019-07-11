@@ -8,7 +8,7 @@
   </select>
   
   <insert id="insert">
-  insert into sms_Role values(null,#{name});
+  insert into sms_role values(null,#{name});
   </insert>
 
   <update id="update">
