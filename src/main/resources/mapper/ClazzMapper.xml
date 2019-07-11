@@ -6,4 +6,21 @@
   <select id="selectAll" resultType="com.briup.apps.sms.bean.Clazz">
     select * from sms_clazz
   </select>
+  <insert id="insert">
+  	insert into sms_school values(null,#{name},#{description},#{tel},#{address});
+  </insert>
+
+  <update id="update">
+  	update sms_school
+	set name=#{name},
+	description=#{description},
+	tel=#{tel},
+	address=#{address}
+	where id = #{id}
+  </update>
+
+  <delete id="deleteById">
+  	delete from sms_school where id = #{id}
+  </delete>
+  
 </mapper>

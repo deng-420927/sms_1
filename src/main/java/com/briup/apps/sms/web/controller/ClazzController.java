@@ -22,4 +22,16 @@ public class ClazzController {
 		return clazzService.selectAll();
 	}
 	
+
+@GetMapping("deleteById")
+public String deleteById(long id) {
+	try {
+		clazzService.deleteById(id);
+		return"删除成功";
+		
+	}catch(Exception e) {
+		e.printStackTrace();
+		return e.getMessage();
+	}
+}
 }

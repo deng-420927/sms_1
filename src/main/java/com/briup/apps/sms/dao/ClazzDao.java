@@ -8,4 +8,5 @@ public interface ClazzDao {
 	List<Clazz> selectAll();
 	void insert(Clazz clazz);
 	void update(Clazz clazz);
+	void deleteById(long id);
 }
