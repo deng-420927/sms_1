@@ -33,4 +33,12 @@ public class UserServiceImpl implements UserService{
 		}
 	}
 
+	@Override
+	public void deleteById(long id) throws Exception {
+		// TODO Auto-generated method stub
+		userDao.deleteById(id);
+		
+	}
+
+
 }
