@@ -17,7 +17,7 @@ public class RoleController {
 	@Autowired
 	private RoleService roleService;
 	
-	@PostMapping
+	@PostMapping("saveOrUpdate")
 	public String saveOrUpdate(Role role)
 	{
 		try {
