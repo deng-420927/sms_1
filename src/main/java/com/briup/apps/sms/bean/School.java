@@ -1,7 +1,9 @@
 package com.briup.apps.sms.bean;
-
+/**
+ * 校园信息
+ * */
 public class School {
-	private long id;
+	private Long id;
 	private String name;
 	private String description;
 	private String tel;
