@@ -8,6 +8,6 @@ public interface RoleDao {
 	List<Role> selectAll();
 	void insert(Role role);
 	void update(Role role);
-	void deletById(long Id);
+	void deleteById(long Id);
 
 	}
