@@ -18,7 +18,6 @@ public class RoleServiceImpl implements RoleService {
 		// TODO Auto-generated method stub
 		return roleDao.selectAll();
 	}
-	
 	@Override
 	public void saveOrUpdate(Role role) throws Exception {
 		if(role.getId()==null) {
