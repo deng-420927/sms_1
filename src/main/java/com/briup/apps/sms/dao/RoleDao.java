@@ -10,5 +10,4 @@ public interface RoleDao {
 	void update(Role role);
 	void deletById(long Id);
 
-	
 	}
